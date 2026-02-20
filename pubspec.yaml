@@ -1,0 +1,26 @@
+name: meteo_simple
+description: Application météo simplifiée
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  # FIX 1: Mise à jour de la version intl pour résoudre le conflit avec flutter_localizations (v 0.20.2+)
+  intl: ^0.20.2
+  # FIX 2: Ajouté pour supporter les locales 'fr_FR' (LocaleDataException)
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
