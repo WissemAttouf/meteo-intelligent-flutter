@@ -43,3 +43,13 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local environment files and signing credentials
+.env
+.env.*
+!.env.example
+android/key.properties
+**/*.jks
+**/*.keystore
+*.pem
+*.key
