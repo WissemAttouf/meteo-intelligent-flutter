@@ -19,10 +19,6 @@ L’application propose une interface en français et un arrière-plan visuel qu
 - Formatage des dates et prise en charge de la localisation française.
 - Possibilité de compiler l’application pour le Web.
 
-## 📸 Captures d’écran
-
-### Écran météo principal
-
 <p align="center">
   <img src="docs/images/meteo1.PNG" alt="Écran principal de l’application Météo intelligente" width="800">
 </p>
@@ -117,3 +113,9 @@ web/              # Point d’entrée et ressources Web
 
 **Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
 [GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
+
+---
+
+## 📸 Captures d’écran
+
+### Écran météo principal
