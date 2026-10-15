@@ -1,146 +1,105 @@
-# 🌦️ Météo Simple
+# Météo intelligente — Application Flutter
 
-A weather application built with **Flutter** and **Dart** that lets users search for a city and view current weather conditions, weather details, and a five-day forecast.
+Application météo développée avec **Flutter** et **Dart**. Elle permet de rechercher une ville, de consulter les conditions météorologiques et d’afficher des prévisions sur cinq jours.
 
-<p align="center">
-  <strong>Flutter · Dart · REST APIs · OpenWeather · Open-Meteo</strong>
-</p>
+<p align="center"><strong>Flutter · Dart · API REST · OpenWeather · Open-Meteo</strong></p>
 
-## 📌 Overview
+## Présentation
 
-**Météo Simple** is a weather app with a French-localized interface and a dynamic background that adapts to weather conditions and day/night. It is built with Flutter and supports Web builds as well as Flutter's other supported targets.
+L’application propose une interface en français et un arrière-plan visuel qui s’adapte aux conditions météo ainsi qu’au cycle jour/nuit. Le projet prend en charge la compilation Flutter Web et peut également être exécuté sur les plateformes prises en charge par Flutter.
 
-## ✨ Features
+## Fonctionnalités
 
-- 🔎 **City search** — search for weather by city name.
-- 🌡️ **Current conditions** — view temperature and a weather description.
-- 💧 **Weather details** — humidity, wind speed, feels-like temperature, and sunrise/sunset times.
-- 📅 **Five-day forecast** — see daily weather conditions and minimum/maximum temperatures.
-- ⭐ **Favorite cities screen** — access the app's favorite-cities section.
-- 🎨 **Dynamic weather UI** — weather-related icons, colors, and background gradients.
-- 🇫🇷 **French date and locale formatting** — with English also listed as a supported locale.
-- 🌐 **Web build support** — compile the app for browsers using Flutter Web.
+- Recherche météo par ville.
+- Consultation de la température et de la description des conditions.
+- Détails météo : humidité, vitesse du vent, température ressentie et heures de lever/coucher du soleil.
+- Prévisions sur cinq jours avec températures minimales et maximales.
+- Écran dédié aux villes favorites.
+- Icônes et arrière-plans visuels adaptés aux conditions météo.
+- Formatage des dates et prise en charge de la localisation française.
+- Possibilité de compiler l’application pour le Web.
 
-## 🧰 Tech Stack
+## Technologies
 
-| Technology | Purpose |
-| --- | --- |
-| [Flutter](https://flutter.dev/) | Cross-platform UI framework |
-| [Dart](https://dart.dev/) | Application programming language |
-| [HTTP](https://pub.dev/packages/http) | HTTP requests to weather services |
-| [Intl](https://pub.dev/packages/intl) | Date and locale-aware formatting |
-| Flutter Localizations | Material, Widgets, and Cupertino localization |
-| [OpenWeather](https://openweathermap.org/api) | City lookup / geocoding |
-| [Open-Meteo](https://open-meteo.com/) | Weather and forecast data |
+| Technologie | Utilisation |
+|---|---|
+| Flutter / Dart | Interface multiplateforme et logique applicative |
+| HTTP | Requêtes vers les services météo |
+| Intl | Formatage des dates et des paramètres régionaux |
+| Flutter Localizations | Localisation des composants Flutter |
+| OpenWeather | Recherche de villes / géocodage |
+| Open-Meteo | Données météo et prévisions |
 
-## 🚀 Getting Started
+## Prérequis
 
-### Prerequisites
+- SDK Flutter sur le canal stable
+- Dart compatible avec la version de Flutter installée
+- Android Studio ou Visual Studio Code
+- Chrome pour tester la version Web
 
-Install the following:
-
-- Flutter SDK (stable channel recommended)
-- Dart SDK compatible with your Flutter version
-- Android Studio or Visual Studio Code
-- A browser such as Chrome for Web testing
-
-Check your setup:
+Vérifiez l’environnement :
 
 ```bash
 flutter doctor
 ```
 
-### 1. Clone the repository
+## Installation
 
 ```bash
 git clone https://github.com/WissemAttouf/meteo-intelligent-flutter.git
 cd meteo-intelligent-flutter
-```
-
-### 2. Install dependencies
-
-```bash
 flutter pub get
 ```
 
-### 3. Configure the weather API
+### Configuration des services météo
 
-The app uses OpenWeather for city lookup and Open-Meteo for forecast data. Configure a valid OpenWeather API key in the app's API configuration before running the project.
+L’application s’appuie sur OpenWeather pour la recherche de villes et Open-Meteo pour les données météo. Configurez une clé API OpenWeather valide dans le fichier de configuration prévu par le projet.
 
-**Security note:** do not commit API keys or other secrets to a public repository. For a production release, move secrets out of source control and review the provider's terms and key restrictions.
+**Sécurité :** ne publiez pas de clés API ni d’identifiants dans le dépôt. Pour une mise en production, vérifiez les restrictions de clé et les conditions des fournisseurs.
 
-### 4. Run the application
+## Exécution
 
-Run on a connected device:
+Sur un appareil connecté :
 
 ```bash
 flutter run
 ```
 
-Run in Chrome:
+Dans Chrome :
 
 ```bash
 flutter run -d chrome
 ```
 
-## 🌐 Build for the Web
-
-Create a production web build:
+## Compilation Web
 
 ```bash
 flutter build web
 ```
 
-Flutter generates the deployable static files in:
+Les fichiers destinés au déploiement sont générés dans `build/web/`. Après chaque modification, reconstruisez cette version avant de la publier sur un hébergeur statique.
 
-```
-build/web/
-```
-
-You can deploy the contents of this directory to a static web host such as Vercel. After changing the app, run `flutter build web` again before deploying the updated output.
-
-## 🧪 Quality Checks
-
-Run the project's tests:
-
-```bash
-flutter test
-```
-
-Run static analysis:
+## Vérifications
 
 ```bash
 flutter analyze
+flutter test
 ```
 
-## 📁 Project Structure
+## Structure du projet
 
-```
+```text
 lib/
-├── config/       # API configuration
-├── models/       # Weather data models
-├── screens/      # Main and favorite-cities screens
-├── services/     # Weather API requests
-├── utils/        # Weather presentation and formatting helpers
-└── main.dart     # Application entry point
-web/              # Flutter Web entry point and web assets
+├── config/       # Configuration des API
+├── models/       # Modèles de données météo
+├── screens/      # Écrans principaux et favoris
+├── services/     # Requêtes vers les services météo
+├── utils/        # Formatage et présentation des données
+└── main.dart     # Point d’entrée
+web/              # Point d’entrée et ressources Web
 ```
 
-## 👨‍💻 Author
+## Auteur
 
-**Wissem Attouf**  
-Software Engineer | Full Stack Developer  
-Tunis, Tunisia
-
-- **GitHub:** [WissemAttouf](https://github.com/WissemAttouf)
-- **LinkedIn:** [Wissem Attouf](https://www.linkedin.com/in/wissem-attouf-452509226/)
-- **Email:** [wattouf35@gmail.com](mailto:wattouf35@gmail.com)
-- **Portfolio:** [wissem-portfolio.vercel.app](https://wissem-portfolio.vercel.app/)
-
-## 📄 License
-
-No license has been specified in this repository yet. Contact the author before redistributing or reusing the project.
-
----
-
-<p align="center">Built with Flutter and Dart ☁️</p>
+**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
+[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
