@@ -19,6 +19,20 @@ L’application propose une interface en français et un arrière-plan visuel qu
 - Formatage des dates et prise en charge de la localisation française.
 - Possibilité de compiler l’application pour le Web.
 
+## 📸 Captures d’écran
+
+### Écran météo principal
+
+<p align="center">
+  <img src="docs/images/meteo1.PNG" alt="Écran principal de l’application Météo intelligente" width="800">
+</p>
+
+### Deuxième aperçu de l’application
+
+<p align="center">
+  <img src="docs/images/meteo2.PNG" alt="Deuxième capture d’écran de l’application Météo intelligente" width="800">
+</p>
+
 ## Technologies
 
 | Technologie | Utilisation |
