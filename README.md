@@ -101,12 +101,6 @@ lib/
 web/              # Point d’entrée et ressources Web
 ```
 
-## Auteur
-
-**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
-[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
-
----
 
 ## 📸 Captures d’écran
 
@@ -121,3 +115,12 @@ web/              # Point d’entrée et ressources Web
   <br><strong>Deuxième aperçu météo</strong>
   <br><em>Vue complémentaire de l’application météo.</em>
 </p>
+
+---
+
+## Auteur
+
+**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
+[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
+
+---
